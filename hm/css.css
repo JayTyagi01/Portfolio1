@@ -1,0 +1,607 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background-color:#253645;
+    }
+    header{
+        width: 100%;
+        height: 85vh;
+        position: relative;
+    }
+    nav{
+        width: 100%;
+        height:100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 100px;
+    }
+    nav a:hover{
+        color: #9e785b;
+    }
+    .logo{
+        font-size: 50px;
+        letter-spacing: 5px;
+        color: #9e785b;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .menu{position: absolute;
+      right: 10px;
+      margin: 1px;
+      
+      
+    }
+    .menu a{
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: white;
+    }
+    .h-text{
+        max-width:500px ;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        z-index: -1;
+    }
+    .h-text h1{
+        font-size: 60px;
+        color:white;
+        margin: 8px;
+    }
+    .h-text p{
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: black;
+        margin: 9px;
+    }
+    #pic{
+        width: 450px;
+        height: 50%;
+        position: absolute;
+        
+        right: 10%;
+        top: 1;
+        z-index: -1;
+        border-radius: 30px 3px 3px 30px;
+    }
+    .img{
+        margin: 30px;
+        padding: 20px;
+    }
+    #about{
+        padding: 100px;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+    }
+    .about-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .about-row-col{
+        flex-basis: 40%;
+        text-align: center;
+        background: rgba(255, 159, 243, 0.2)
+    }
+    #pic2{
+        margin: 10px;
+        padding: 10px;
+        width: 75%;
+        border-radius: 3px 30px 30px 3px;
+
+    }
+    .about-right-col{
+        flex: 50%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .about-right-col h1{
+        font-size: 3em;
+        color:white;
+        line-height: 1.4em;
+        margin: 10px;
+    }
+    .about-right-col p{
+        font-size: 20px;
+        color: black;
+        margin: 30px 0px 40px 0px;
+        margin: 10px;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        margin: 49px;
+        padding: 10px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      .work {
+        
+        padding: 32px 0;
+        margin-top: 2rem;
+      }
+      .work h2{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+      }
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: white;
+        color: #253645;
+        transform: rotateY(180deg);
+      }
+      .work-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .skill{
+          background-color: #253645;
+          
+      }
+      .skill h1{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+      }
+      .skillcon{
+          margin: 10px;
+          padding: 19px;
+      }
+
+
+      .container {
+        width: 100%; /* Full width */
+        background-color: #ddd; /* Grey background */
+      }
+      .skill p{
+          text-align: left;
+          position: relative;
+          color: white;
+          left: 20px;
+          font-size: 30px;
+      }      
+      .skills {
+        text-align: right; /* Right-align text */
+        padding-top: 20px; /* Add top padding */
+        padding-bottom: 20px; /* Add bottom padding */
+        color: white; /* White text color */
+      }
+
+
+
+
+      .expaties{
+        background-color:white ;
+      }
+      .card h2{
+          background-color: #253645;
+         
+      }    
+      .expcont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }  
+      .title {
+        background-color: white;
+        color: #253645;
+        font-size: 18px; 
+      }
+      .expaties h1{
+        color: #253645;
+        text-align: center;
+        font-size: 50px;
+      }
+      .white{
+          background-color: #253645;
+      }
+      
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+
+      button:hover, a:hover {
+        opacity: 0.9;
+      }
+      .html {width: 90%; background-color: #04AA6D;} /* Green */
+      .css {width: 80%; background-color: #2196F3;} /* Blue */
+      .js {width: 65%; background-color: #f44336;} /* Red */
+      .card {
+        box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      .expaties{
+        background-color:white ;
+      }
+      .card h2{
+          background-color: #253645;
+         
+      }    
+      .expcont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }  
+      .title {
+        background-color: white;
+        color: #253645;
+        font-size: 18px; 
+      }
+      .expaties h1{
+        color: #253645;
+        text-align: center;
+        font-size: 50px;
+      }
+      .white{
+          background-color: #253645;
+      }
+      
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+
+      button:hover, a:hover {
+        opacity: 0.9;
+      }
+      .fcard{
+        display: none;
+      }
+      footer{
+        width: 100%;
+        
+        bottom: 0;
+        left: 0;
+        background: #111;
+      }
+      footer .content{
+        max-width: 1350px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      footer .content p,a{
+        color: #fff;
+      }
+      footer .content .box{
+        width: 33%;
+        transition: all 0.4s ease;
+      }
+      footer .content .topic{
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 16px;
+      
+      }
+      footer .content p{
+        text-align: justify;
+      }
+      footer .content .lower .topic{
+        margin: 24px 0 5px 0;
+      }
+      footer .content .lower i{
+        padding-right: 16px;
+      }
+      footer .content .middle{
+        padding-left: 80px;
+      }
+      footer .content .middle a{
+        line-height: 32px;
+      }
+      footer .content .right input[type="text"]{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        color: #d9d9d9;
+        background: #000;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 17px;
+        border: 2px solid #222222;
+      }
+      footer .content .right input[type="submit"]{
+        height: 42px;
+        width: 100%;
+        font-size: 18px;
+        color: #d9d9d9;
+        background: #253645;
+        outline: none;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 12px;
+        border: 2px solid #253645;
+        transition: all 0.3s ease-in-out;
+      }
+      .content .right input[type="submit"]:hover{
+        background: none;
+        color:  #253645;
+      }
+      footer .content .media-icons a{
+        font-size: 16px;
+        height: 45px;
+        width: 45px;
+        display: inline-block;
+        text-align: center;
+        line-height: 43px;
+        border-radius: 5px;
+        border: 2px solid #222222;
+        margin: 30px 5px 0 0;
+        transition: all 0.3s ease;
+      }
+      .content .media-icons a:hover{
+        border-color: #253645;
+      }
+      footer .bottom{
+        width: 100%;
+        text-align: right;
+        color: #d9d9d9;
+        padding: 0 40px 5px 0;
+      }
+      footer .bottom a{
+        color: #253645;
+      }
+      footer a{
+        transition: all 0.3s ease;
+      }
+      footer a:hover{
+        color: #253645;
+      }
+      @media (max-width:1100px) {
+        footer .content .middle{
+          padding-left: 50px;
+        }
+      }
+      @media (max-width:950px){
+        footer .content .box{
+          width: 50%;
+        }
+        .content .right{
+          margin-top: 40px;
+        }
+      }
+      @media (max-width:560px){
+        footer{
+          position: relative;
+        }
+        footer .content .box{
+          width: 100%;
+          margin-top: 30px;
+        }
+        footer .content .middle{
+          padding-left: 0;
+        }
+      }
+      @media (max-width:480px){
+        *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        header{
+          width: 90%;
+          height: 200vh;
+          position: relative;
+          margin: 5px;
+        }  
+        nav{
+          width: 90%;
+          height: 60vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 80px;
+        }
+        .logo{
+          font-size: 40px;
+          letter-spacing: 4px;
+          position: absolute;
+          display: flex;
+          text-align: center;
+        }
+      
+        .menu a{
+          padding:1px 5px;
+          font-size: 15px;
+        }
+        .h-text{
+          max-width: 10px;
+          position: absolute;
+          top: 25%;
+          left: 8%;
+          
+        }
+        .h-text h1{
+          font-size: 50px;
+          margin: 100%;
+        }
+        .h-text p{
+          width: 270px;
+          position: absolute;
+          z-index: 0;
+          left: 10%;
+          font-size:15px;
+          margin: 20px;
+        }
+        #pic{
+          width:300px;
+          height: 20%;
+          position: absolute;
+          top:70%;
+          left: 10%;
+          border-radius: 0px;
+        }
+        .fcard{
+          width:100px;
+        }
+        .fcards{
+          background-color:#253645;
+        }
+        .fcard h2{
+            background-color: white;
+           
+        }    
+        .fcardcont {
+          margin-bottom: 10px;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }  
+        .title {
+          background-color: #253645;
+          color: white;
+          font-size: 18px; 
+        }
+        .fcard h1{
+          color: white;
+          text-align: center;
+          font-size: 50px;
+        }
+        .white{
+            background-color:white;
+        }
+        
+        button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+        }
+        
+        a {
+          text-decoration: none;
+          font-size: 22px;
+          color: black;
+        }
+  
+        button:hover, a:hover {
+          opacity: 0.9;
+        }
+
+  
+        #about{
+          padding: 10px 65px;
+          width:95.85%;
+          height:180vh ;
+        }
+      
+
+        #pic2{
+          width: 300px;
+          height: 30%;
+          margin: -40px;
+          
+          position: absolute;
+          top: 2300px;
+          border-radius: 0px;
+
+        }
+        .about-right-col p{
+          font-size: 18px;
+          color: black;
+          margin: 0px;
+      }
+        .work{
+          padding: 5px;
+          margin-top: 3rem;
+          height: 100vh;
+        }
+        .work{
+          display: none;
+        }
+        .fcard{
+          display: contents;
+          flex-direction: column;
+        }
+        .flip-card-front{
+          width: 100px;
+        }
+        .expcont{
+          flex-direction: column;
+        }
+      }
+      
